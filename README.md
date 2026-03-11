@@ -46,7 +46,7 @@ All in a learning environment, this project is specifially for learning purposes
 
 This project implements Q-Learning, a reinforcement learning algorithm, to teach an AI optimal strategies for playing BlackJack. In BlackJack, players aim to get as close as possible to 21 without exceeding it, competing against a dealer. The AI agent learns by playing thousands of simulated games, updating a Q-table that maps game states (player's hand value, dealer's visible card, and whether the player has an ace) to actions (hit or stand). Through trial and error with rewards (+1 for winning, -1 for losing, 0 for drawing), the AI discovers that standing on 17+ and hitting on lower values is generally optimal, mimicking expert human play. 
 
-One thing to maybe update or add is the actin of doubling, as this move does bring significant change.
+One thing to maybe update or add is the action of doubling, as this move does bring significant change.
 
 Essentially being based on statistics in determining how you should optimally play. So when you get to a high number of simulated games you start to see interesting strategy.
 
