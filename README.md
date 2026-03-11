@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# BlackJack Q-Learning
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that demonstrates Q-Learning algorithm applied to the game of BlackJack. The AI learns optimal strategies through reinforcement learning.
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+Post-grad I wanted to deepen my learning and chose so in the doing of this project. In hopes of becoming more knowledgable (and amazed) in how some ML algos perform, I chose to start basic with QLearning, and in used that with the notorious game of Blackjack. Whilst also strengthening my experience in developing in a live web sever, in my opinion watching live changing to your work feels best. In such also got some eexpereince in the power of Ai co-building, if thats what we want to call it.. Pretty incredible the time save and help it brings. All in a learning environment, this project is specifially for learning purposes.. now with that, take no advisory in the results this may bring to methods in the game of BlackJack. 
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Interactive BlackJack game
+- Q-Learning implementation for AI player
+- Real-time learning visualization
+- Adjustable learning parameters
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or higher)
+- npm
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```
+   git clone <the url>
+   cd your-repo-name
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+   ```
+   npm start
+   ```
 
-### `npm run eject`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How It Works
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project implements Q-Learning, a reinforcement learning algorithm, to teach an AI optimal strategies for playing BlackJack. In BlackJack, players aim to get as close as possible to 21 without exceeding it, competing against a dealer. The AI agent learns by playing thousands of simulated games, updating a Q-table that maps game states (player's hand value, dealer's visible card, and whether the player has an ace) to actions (hit or stand). Through trial and error with rewards (+1 for winning, -1 for losing, 0 for drawing), the AI discovers that standing on 17+ and hitting on lower values is generally optimal, mimicking expert human play.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React
+- JavaScript
+- [Any other libraries you're using]
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Add contribution guidelines if applicable]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Add license information]
